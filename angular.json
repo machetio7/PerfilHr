@@ -85,9 +85,21 @@
           "options": {
             "browserTarget": "perfil-hr:build"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
-  "defaultProject": "perfil-hr"
+  "defaultProject": "perfil-hr",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

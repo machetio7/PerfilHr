@@ -1,54 +1,63 @@
 {
-    "name": "perfil-hr",
-    "version": "0.0.0",
-    "scripts": {
-        "ng": "ng",
-        "start": "ng serve",
-        "build": "ng build",
-        "watch": "ng build --watch --configuration development",
-        "test": "jest",
-        "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage",
-        "prepare": "husky install",
-        "commit": "npx cz"
-    },
-    "private": true,
-    "dependencies": {
-        "@angular/animations": "~13.1.0",
-        "@angular/common": "~13.1.0",
-        "@angular/compiler": "~13.1.0",
-        "@angular/core": "~13.1.0",
-        "@angular/forms": "~13.1.0",
-        "@angular/platform-browser": "~13.1.0",
-        "@angular/platform-browser-dynamic": "~13.1.0",
-        "@angular/router": "~13.1.0",
-        "jshint": "^2.13.4",
-        "rxjs": "~7.4.0",
-        "tslib": "^2.3.0",
-        "zone.js": "~0.11.4"
-    },
-    "devDependencies": {
-        "@angular-builders/jest": "latest",
-        "@angular-devkit/build-angular": "~13.1.4",
-        "@angular/cli": "~13.1.4",
-        "@angular/compiler-cli": "~13.1.0",
-        "@babel/core": "^7.16.10",
-        "@briebug/jest-schematic": "^4.0.0",
-        "@types/jest": "^27.4.1",
-        "@types/node": "^12.11.1",
-        "babel-loader": "^8.2.3",
-        "commitizen": "^4.2.4",
-        "eslint": "^7.26.0",
-        "husky": "^7.0.4",
-        "jest": "latest",
-        "typescript": "~4.5.2"
-    },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
-    },
-    "transform": {
-        "\\.js$": "<rootDir>/node_modules/babel-jest"
+  "name": "perfil-hr",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepare": "husky install",
+    "commit": "npx cz",
+    "lint": "ng lint --fix",
+    "lint:check": "eslint . --ext .js,.ts"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.1.0",
+    "@angular/common": "~13.1.0",
+    "@angular/compiler": "~13.1.0",
+    "@angular/core": "~13.1.0",
+    "@angular/forms": "~13.1.0",
+    "@angular/platform-browser": "~13.1.0",
+    "@angular/platform-browser-dynamic": "~13.1.0",
+    "@angular/router": "~13.1.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "jshint": "^2.13.4",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-builders/jest": "latest",
+    "@angular-devkit/build-angular": "~13.1.4",
+    "@angular-eslint/builder": "13.1.0",
+    "@angular-eslint/eslint-plugin": "13.1.0",
+    "@angular-eslint/eslint-plugin-template": "13.1.0",
+    "@angular-eslint/schematics": "13.1.0",
+    "@angular-eslint/template-parser": "13.1.0",
+    "@angular/cli": "~13.1.4",
+    "@angular/compiler-cli": "~13.1.0",
+    "@babel/core": "^7.16.10",
+    "@briebug/jest-schematic": "^4.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.11.0",
+    "@typescript-eslint/parser": "5.11.0",
+    "babel-loader": "^8.2.3",
+    "commitizen": "^4.2.4",
+    "eslint": "^8.2.0",
+    "husky": "^7.0.4",
+    "jest": "latest",
+    "tailwindcss": "^3.0.23",
+    "typescript": "~4.5.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
     }
+  }
 }
