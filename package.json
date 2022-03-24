@@ -8,7 +8,9 @@
         "watch": "ng build --watch --configuration development",
         "test": "jest",
         "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "jest --coverage",
+        "prepare": "husky install",
+        "commit": "npx cz"
     },
     "private": true,
     "dependencies": {
