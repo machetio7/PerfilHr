@@ -1,0 +1,41 @@
+.content {
+    @apply grid grid-cols-1 grid-rows-2 place-content-center w-full text-center bg-bg_404 h-screen pt-16;
+    &__img {
+        @apply w-full flex flex-col justify-end items-center;
+        img {
+            animation: animateImg 2s linear infinite alternate;
+            @apply w-60
+        }
+    }
+    &__number {
+        animation: animateText 2s linear infinite alternate;
+        @apply text-6xl font-semibold relative -top-16 text-white/50
+    }
+    &__description {
+        @apply flex flex-col row-start-2 justify-start items-center
+    }
+    &__error {
+        @apply text-white mb-4 text-lg
+    }
+    &__button {
+        @apply bg-primary text-white font-semibold py-3 px-4 rounded-full w-36
+    }
+}
+
+@keyframes animateImg {
+    0% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(-5%);
+    }
+}
+
+@keyframes animateText {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}

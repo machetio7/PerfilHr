@@ -5,9 +5,18 @@ module.exports = {
             './src/**/*.{html,ts}',
         ]
     },
-    darkMode: 'class', // or 'media' or 'class'
     theme: {
-        extend: {},
+        fontFamily: {
+            Montserrat: ['Montserrat', 'sans-serif'],
+        },
+        extend: {
+
+            colors: {
+                'primary': '#06386D',
+                'secondary': '',
+                'bg_404': '#1a1a1a',
+            }
+        },
     },
     variants: {
         extend: {},
