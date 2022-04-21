@@ -3,6 +3,23 @@
         <img src="assets/images/bg-left-login.jpg" alt="perfil-img">
     </div>
     <div class="container-form">
-        <form [formGroup]="formGroup"></form>
+        <div class="container-form__content">
+
+            <form [formGroup]="formGroup" class="content form" (submit)="login()">
+                <h2>Login</h2>
+                <div class="form__input">
+                    <span>Usuario</span>
+                    <input type="email" formControlName="email">
+                </div>
+                <div class="form__input">
+                    <span>Contraseña</span>
+                    <input type="password" formControlName="password">
+                </div>
+
+                <div class="form__button">
+                    <button>Ingresar</button>
+                </div>
+            </form>
+        </div>
     </div>
 </section>
