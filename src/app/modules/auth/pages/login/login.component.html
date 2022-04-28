@@ -1,24 +1,28 @@
-<section>
-    <div class="container-img">
-        <img src="assets/images/bg-left-login.jpg" alt="perfil-img">
+<section class="main">
+    <div class="main__waves">
+        <img src="../../../../../assets/images/loginPerson.png" alt="login image">
     </div>
-    <div class="container-form">
-        <div class="container-form__content">
-
-            <form [formGroup]="formGroup" class="content form" (submit)="login()">
-                <h2>Login</h2>
-                <div class="form__input">
-                    <span>Usuario</span>
-                    <input type="email" formControlName="email">
+    <div class="main__login">
+        <div class="login__content">
+            <img src="./../../../../assets/images/collab.png" alt="content login">
+            <h1>Inicio de Sesión</h1>
+            <form class="login__form" action="#">
+                <div class="login__form__input">
+                    <label>
+                        <input type="email" id="email" required>
+                        <span>Correo Electrónico</span>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </label>
                 </div>
-                <div class="form__input">
-                    <span>Contraseña</span>
-                    <input type="password" formControlName="password">
+                <div class="login__form__input">
+                    <label>
+                        <input type="password" id="password" required>
+                        <span>Contraseña</span>
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </label>
                 </div>
-
-                <div class="form__button">
-                    <button>Ingresar</button>
-                </div>
+                <a href="#">Necesitas una cuenta?</a>
+                <button> Iniciar Sesión</button>
             </form>
         </div>
     </div>

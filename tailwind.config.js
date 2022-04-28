@@ -7,7 +7,7 @@ module.exports = {
     },
     theme: {
         fontFamily: {
-            Montserrat: ['Montserrat', 'sans-serif'],
+            Dosis: ['Dosis', 'sans-serif'],
         },
         extend: {
 
